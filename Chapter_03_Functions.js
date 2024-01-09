@@ -15,9 +15,29 @@
  */
 
 // creating or defining a function
+// helloWorld() function has no parameter.
 function helloWorld() {
   console.log("Hello JavaScript Function");
 }
 
 // calling helloWorld() function
 helloWorld();
+
+// function to compute addition of two parameter
+
+function addition(numOne, numTwo) {
+  let result = numOne + numTwo;
+  console.log(`sum of ${numOne} + ${numTwo} = ${result}`);
+}
+
+// function additionA(numOne, numTwo) {
+//   let result = numOne + numTwo;
+//   return result;
+// }
+
+// write addition expression directly to return keyword
+// function additionB(numOne, numTwo) {
+//   return numOne + numTwo;
+// }
+
+addition(10, 29);
