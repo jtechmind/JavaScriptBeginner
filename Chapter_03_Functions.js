@@ -30,14 +30,26 @@ function addition(numOne, numTwo) {
   console.log(`sum of ${numOne} + ${numTwo} = ${result}`);
 }
 
-// function additionA(numOne, numTwo) {
-//   let result = numOne + numTwo;
-//   return result;
-// }
+// return keyword will return some value when we call the function.
+function additionA(numOne, numTwo) {
+  let result = numOne + numTwo;
+  return result;
+}
 
 // write addition expression directly to return keyword
-// function additionB(numOne, numTwo) {
-//   return numOne + numTwo;
-// }
+function additionB(numOne, numTwo) {
+  return numOne + numTwo;
+}
 
 addition(10, 29);
+
+let resultOfadditionA = additionA(18, 99);
+// now resultOfadditionA has the value returned by the function additionA()
+console.log("output from additionA(): " + resultOfadditionA);
+
+// we can direct call the function in console.log() to print return value
+console.log(additionA(25, 55));
+
+let resultOfadditionB = additionB(28, 199);
+// now resultOfadditionB has the value returned by the function additionB()
+console.log("output from additionB(): " + resultOfadditionB);
