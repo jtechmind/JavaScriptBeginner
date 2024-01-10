@@ -20,10 +20,18 @@ country[1] = "USA";
 // Access an array elements, by refering index number
 let c = country[0];
 console.log(c); // c has the value of country index 0
-console.log(country.length); // length property gives us size of an array
+console.log("Length of country array: " + country.length); // length property gives us size of an array
 
 // We can also create array with elements
 const programming = ["Java", "Python", "JavaScript", "C++"];
 
-// Using the JavaScript Keyword new
-const products = ["Jeans", "Shirt", "T-Shirt"];
+// Create an Array using "new" keyword, Array() is a constructor
+const products = new Array("Jeans", "Shirt", "T-Shirt", "Phone");
+
+// Array iteration using for loop
+for (let i = 0; i < programming.length; i++) {
+  console.log(programming[i]);
+}
+
+// use of "for in" loop, it will return key of an object
+for (item in products) console.log(products[item]);
