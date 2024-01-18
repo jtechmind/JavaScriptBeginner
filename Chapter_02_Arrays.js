@@ -43,3 +43,7 @@ for (item in products) console.log(products[item]);
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.pop();
 //The pop() method returns the value that was "popped out":
+
+const fruits_new = ["Banana", "Orange", "Apple", "Mango"];
+fruits.push("Kiwi");
+// The push() method returns the new array length:
