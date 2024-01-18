@@ -36,14 +36,19 @@ for (let i = 0; i < programming.length; i++) {
 // use of "for in" loop, it will return key of an object
 for (item in products) console.log(products[item]);
 
-// push pop
+// push() and pop() method
 
 // The pop() method removes the last element from an array:
 
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
-fruits.pop();
-//The pop() method returns the value that was "popped out":
+let deletedFruit = fruits.pop();
 
+//The pop() method returns the value that was "popped out":
+console.log(deletedFruit);
+
+//The push() method adds a new element to an array (at the end):
 const fruits_new = ["Banana", "Orange", "Apple", "Mango"];
-fruits.push("Kiwi");
+let newLenght = fruits_new.push("Kiwi");
+
 // The push() method returns the new array length:
+console.log(newLenght);
