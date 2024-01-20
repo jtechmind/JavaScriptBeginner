@@ -52,3 +52,20 @@ let newLenght = fruits_new.push("Kiwi");
 
 // The push() method returns the new array length:
 console.log(newLenght);
+
+// Shifting elements
+// shifting is equivalent to popping,
+// but working on the first element instead of the last
+
+// shift() and unshift() methods are used to shift and unshift
+// element from the start
+
+const numbers = [2, 4, 6, 8, 10, 12];
+let shift_number = numbers.shift(); // element at the index[0] is popped out
+console.log(shift_number); // shifted element return
+console.log(numbers); // now array numbers[4,6,8,10,12]
+
+const oddNumbers = [1, 3, 5, 7, 9, 11, 13];
+let unshift_odd = oddNumbers.unshift(15); // new element will be added at index[0]
+console.log(unshift_odd); // length after adding new element
+console.log(oddNumbers);
