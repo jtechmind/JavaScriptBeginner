@@ -22,3 +22,11 @@ console.log(typeof firstVariable); // typeof keyword is used to find out data ty
 firstVariable = 50;
 console.log(firstVariable); // value 50 is assined
 console.log(typeof firstVariable); // now the type is also changed
+
+// Remember Primitives are immutable
+// Test the immutibility
+let varX = 100;
+let varY = varX + 400;
+varX + 91;
+console.log(varX);
+console.log(varY);
