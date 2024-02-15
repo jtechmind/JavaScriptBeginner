@@ -33,3 +33,20 @@ let car = new vehicale("Harrier", "TATA", "1956cc");
 console.log("Car Name: " + car.naem);
 console.log("Maker: " + car.maker);
 console.log("Engine: " + car.engine);
+
+// Creating Object using object literal and Add method
+let carMahindra = {
+  name: "Thar",
+  maker: "Mahindra",
+  engine: "1495cc",
+  start: function () {
+    console.log("Starting the engine..");
+  },
+};
+
+carMahindra.start();
+// add stop() method to carMahindra object later
+carMahindra.stop = function () {
+  console.log("Applying Break..");
+};
+carMahindra.stop();
