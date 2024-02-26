@@ -18,9 +18,9 @@ var firstVariable;
 console.log(firstVariable); // output: undefined
 console.log(typeof firstVariable); // typeof keyword is used to find out data type.
 
-// now assign value to the variable usin = operator
+// now assign value to the variable using = operator
 firstVariable = 50;
-console.log(firstVariable); // value 50 is assined
+console.log(firstVariable); // value 50 is assigned
 console.log(typeof firstVariable); // now the type is also changed
 
 /**
