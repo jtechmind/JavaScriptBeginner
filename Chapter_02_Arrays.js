@@ -11,9 +11,10 @@
  * const array_name = [item1,item2...,item_n]
  */
 
-// an array has been declared, named country
+// an empty array has been declared, named country
 const country = [];
-// we can provide elements after declaration
+
+// we can insert elements after declaration
 country[0] = "India"; // The index of array starts from zero "0"
 country[1] = "USA";
 
@@ -25,7 +26,7 @@ console.log("Length of country array: " + country.length); // length property gi
 // We can also create array with elements
 const programming = ["Java", "Python", "JavaScript", "C++"];
 
-// Create an Array using "new" keyword, Array() is a constructor
+// Create an array using "new" keyword, Array() is a constructor
 const products = new Array("Jeans", "Shirt", "T-Shirt", "Phone");
 
 // Array iteration using for loop
@@ -33,8 +34,16 @@ for (let i = 0; i < programming.length; i++) {
   console.log(programming[i]);
 }
 
+// Iterate using forEach() method
+console.log("using forEach() mehtod of array");
+programming.forEach(function (p) {
+  console.log(p);
+});
+
 // use of "for in" loop, it will return key of an object
 for (item in products) console.log(products[item]);
+
+// Add and Remove elements:
 
 // push() and pop() method
 
