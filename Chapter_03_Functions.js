@@ -53,3 +53,23 @@ console.log(additionA(25, 55));
 let resultOfadditionB = additionB(28, 199);
 // now resultOfadditionB has the value returned by the function additionB()
 console.log("output from additionB(): " + resultOfadditionB);
+
+// Function Expression:
+console.log("Function Expression:");
+
+var multiply = function (x, y) {
+  return x * y;
+};
+
+console.log("Arrow Function:");
+var divide = (a, b) => a / b;
+
+console.log("Callback Function:");
+function fetchData(url, callback) {
+  // Code to fetch data
+  callback(data);
+}
+
+fetchData("https://example.com/data", function (data) {
+  console.log(data);
+});
