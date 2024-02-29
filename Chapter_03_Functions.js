@@ -73,3 +73,13 @@ function fetchData(url, callback) {
 fetchData("https://example.com/data", function (data) {
   console.log(data);
 });
+
+console.log("Recursive Function:");
+
+function factorial(n) {
+  if (n === 0 || n === 1) {
+    return 1;
+  } else {
+    return n * factorial(n - 1);
+  }
+}
