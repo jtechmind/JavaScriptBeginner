@@ -27,3 +27,18 @@ console.log(`${feet} feet = ${inches} inches`);
 
 let cm = feetToCM(feet).toFixed(3);
 console.log(`${feet} feet = ${cm} cm`);
+
+/**
+ * Conver from meters to other measurements
+ */
+
+// Meter to feet
+
+function meterToFeet(m) {
+  return m * 3.2808;
+}
+
+let meter = 22;
+
+let meterToFeetConverted = meterToFeet(meter);
+console.log(` ${meter} meter = ${meterToFeetConverted} feet`);
