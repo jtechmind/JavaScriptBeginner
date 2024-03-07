@@ -18,15 +18,17 @@ Example 1:
 // Output: [0,1]
  
  */
-nums = [1, 2, 7];
+nums = [1, 2, 7, 13, 5];
 
 function solustion(target, arr) {
   result = [];
   for (i = 0; i < arr.length - 1; i++) {
     for (j = i + 1; j < arr.length; j++) {
       if (arr[i] + arr[j] === target) {
-        result[0] = i;
-        result[1] = j;
+        result.push(i);
+        result.push(j);
+        // result[0] = i;
+        // result[1] = j;
         break;
       }
     }
@@ -34,4 +36,4 @@ function solustion(target, arr) {
   return result;
 }
 
-console.log(solustion(9, nums));
+console.log(solustion(12, nums));
