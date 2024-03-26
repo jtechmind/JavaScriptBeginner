@@ -10,13 +10,27 @@ const div = document.querySelector("div");
 const button = document.querySelector("button");
 const form = document.querySelector("form");
 
-div.addEventListener("click", clickEv, { capture: true });
+div.addEventListener("click", clickEv);
 
-form.addEventListener("click", clickEv, { capture: true });
+form.addEventListener("click", clickEv);
 
-button.addEventListener("click", clickEv);
+button.addEventListener("click", stopProp);
 
 function clickEv(event) {
+  alert(
+    "CurrentTarget: " +
+      event.currentTarget.tagName +
+      " " +
+      "Target: " +
+      event.target.tagName +
+      " " +
+      "this.target" +
+      this.tagName
+  );
+}
+
+function stopProp(event) {
+  event.stopPropagation();
   alert(
     "CurrentTarget: " +
       event.currentTarget.tagName +
