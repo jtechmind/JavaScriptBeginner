@@ -7,7 +7,24 @@
  */
 
 const div = document.querySelector("div");
+const button = document.querySelector("button");
+const form = document.querySelector("form");
 
-div.addEventListener("click", (event) => {
-  alert(event.currentTarget);
-});
+div.addEventListener("click", clickEv);
+
+form.addEventListener("click", clickEv);
+
+button.addEventListener("click", clickEv);
+
+function clickEv(event) {
+  alert(
+    "CurrentTarget: " +
+      event.currentTarget.tagName +
+      " " +
+      "Target: " +
+      event.target.tagName +
+      " " +
+      "this.target" +
+      this.tagName
+  );
+}

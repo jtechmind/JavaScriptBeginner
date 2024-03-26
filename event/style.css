@@ -1,0 +1,18 @@
+body * {
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid salmon;
+}
+#form_div {
+  margin-top: 100px;
+  border-style: solid green 2px;
+  background-color: aquamarine;
+  text-align: center;
+  height: 300px;
+}
+#myForm {
+  padding-top: 60px;
+}
+button {
+  font-size: 24px;
+}
