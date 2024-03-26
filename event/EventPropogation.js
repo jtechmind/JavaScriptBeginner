@@ -6,39 +6,10 @@
  * Event Delegation.
  */
 
-const div = document.querySelector("div");
-const button = document.querySelector("button");
-const form = document.querySelector("form");
+const div = document.querySelector(".products");
 
-div.addEventListener("click", clickEv);
-
-form.addEventListener("click", clickEv);
-
-button.addEventListener("click", stopProp);
-
-function clickEv(event) {
-  alert(
-    "CurrentTarget: " +
-      event.currentTarget.tagName +
-      " " +
-      "Target: " +
-      event.target.tagName +
-      " " +
-      "this.target" +
-      this.tagName
-  );
-}
-
-function stopProp(event) {
-  event.stopPropagation();
-  alert(
-    "CurrentTarget: " +
-      event.currentTarget.tagName +
-      " " +
-      "Target: " +
-      event.target.tagName +
-      " " +
-      "this.target" +
-      this.tagName
-  );
-}
+div.addEventListener("click", (event) => {
+  if (event.target.tagName === "SPAN") {
+    window.location.href += "/" + event.target.className;
+  }
+});

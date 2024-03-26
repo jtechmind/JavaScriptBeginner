@@ -1,18 +1,15 @@
-body * {
-  margin: 10px;
-  padding: 10px;
-  border: 2px solid salmon;
+.products {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-gap: 10px;
+  margin: 200px;
 }
-#form_div {
-  margin-top: 100px;
-  border-style: solid green 2px;
-  background-color: aquamarine;
-  text-align: center;
-  height: 300px;
-}
-#myForm {
-  padding-top: 60px;
-}
-button {
-  font-size: 24px;
+
+span {
+  width: 100px;
+  height: 100px;
+  background-color: chartreuse;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
