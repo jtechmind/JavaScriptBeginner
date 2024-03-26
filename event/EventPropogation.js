@@ -10,9 +10,9 @@ const div = document.querySelector("div");
 const button = document.querySelector("button");
 const form = document.querySelector("form");
 
-div.addEventListener("click", clickEv);
+div.addEventListener("click", clickEv, { capture: true });
 
-form.addEventListener("click", clickEv);
+form.addEventListener("click", clickEv, { capture: true });
 
 button.addEventListener("click", clickEv);
 
